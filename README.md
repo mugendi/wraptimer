@@ -6,6 +6,9 @@
 -->
 
 # wraptimer
+
+- 📖 [Documentation](https://mugendi.github.io/wraptimer/)
+
 An amazing alternative to Python's builtin `timeit` module that allows for high resolution timing of functions as well as in-depth line-by-line timing. It also exposes convenient classes to measure execution time for any arbitrary code.
 
 ### Sync function example
