@@ -7,7 +7,19 @@
 import asyncio
 import time
 
-from wraptimer.timeit import TimeIt
+from wraptimer import TimeIt, Timer
+
+# initialize
+t = Timer(timer_type="performance")
+# start timer
+t.start()
+# some long running code
+time.sleep(1)
+# stop timer
+t.stop()
+# get duration taken to run
+print("took", t.time_string)
+
 
 timeit = TimeIt(verbose=True, show_args=True)
 

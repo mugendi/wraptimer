@@ -1,0 +1,104 @@
+# Copyright (c) 2023 Anthony Mugendi
+# 
+# This software is released under the MIT License.
+# https://opensource.org/licenses/MIT
+
+site_name: wraptimer
+copyright: Copyright © 2023 Red Hat, Inc.
+
+# site_url: https://ansible-compat.readthedocs.io/
+# repo_url: https://github.com/ansible/ansible-compat
+
+edit_uri: blob/main/docs/
+docs_dir: docs
+
+# navigation bar
+nav: 
+  - index.md
+  - timer.md
+  - timeit.md
+
+
+# Watch
+watch:
+  - mkdocs.yml
+  - wraptimer
+  - docs
+  - README.md
+
+# Theme
+theme:
+    name: ansible
+    highlightjs: true
+    features:
+      - content.code.copy
+      - content.action.edit
+      - navigation.expand
+      - navigation.sections
+      - navigation.instant
+      - navigation.indexes
+      - navigation.tracking
+      - toc.integrate
+
+
+# Plugins
+plugins:
+  - autorefs
+  - material/search
+  - material/social
+  - material/tags
+  - mkdocstrings:
+      handlers:
+        python:
+          import:
+            - https://docs.python.org/3/objects.inv
+          options:
+            # heading_level: 2
+            docstring_style: sphinx
+            docstring_options:
+              ignore_init_summary: yes
+
+            show_submodules: yes
+            docstring_section_style: list
+            members_order: alphabetical
+            show_category_heading: no
+            # cannot merge init into class due to parse error...
+            # merge_init_into_class: yes
+            show_root_heading: yes
+            show_signature_annotations: yes
+            separate_signature: yes
+            show_bases: false
+ 
+# markdown extensions
+# https://facelessuser.github.io/pymdown-extensions/#extensions
+markdown_extensions:
+  - markdown_include.include:
+      base_path: docs
+  - admonition
+  - def_list
+  - footnotes
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums : true
+      auto_title: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.magiclink:
+      repo_url_shortener: true
+      repo_url_shorthand: true
+      social_url_shorthand: true
+      social_url_shortener: true
+      user: facelessuser
+      repo: pymdown-extensions
+      normalize_issue_symbols: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji
+  - toc:
+      toc_depth: 4
+      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
