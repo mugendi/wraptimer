@@ -1,16 +1,21 @@
 [tool.poetry]
-name = "wraptimer"
-version = "0.1.2"
-description = "An amazing alternative to Python's builtin timeit module that allows for high resolution timing of functions as well as in-depth line-by-line timing. It also exposes convenient classes to measure execution time for any arbitrary code."
 authors = ["Anthony Mugendi <ngurumugz@gmail.com>"]
+description = "An amazing alternative to Python's builtin timeit module that allows for high resolution timing of functions as well as in-depth line-by-line timing. It also exposes convenient classes to measure execution time for any arbitrary code."
+name = "wraptimer"
 readme = "README.md"
+version = "0.1.2"
 
 #https://github.com/python-poetry/poetry/blob/master/pyproject.toml
 #https://gist.github.com/nazrulworld/3800c84e28dc464b2b30cec8bc1287fc
-classifiers=[]
-keywords=["function","time","duration","trace","timer","timeit"]
-maintainers=[]
-license="MIT"
+classifiers = [
+  "Topic :: Software Development :: Debuggers",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Software Development :: Testing",
+  "Programming Language :: Python :: 3"
+]
+keywords = ["function", "time", "duration", "trace", "timer", "timeit"]
+license = "MIT"
+maintainers = []
 #homepage="https://mugendi.github.io/wraptimer/"
 #repository="https://github.com/mugendi/wraptimer"
 #ducumentation="https://mugendi.github.io/wraptimer/"
@@ -30,8 +35,8 @@ optional = true
 optional = true
 
 [tool.poetry.group.test.dependencies]
-pytest = "^7.3.2"
 flake8 = "^6.0.0"
+pytest = "^7.3.2"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"
@@ -39,22 +44,20 @@ isort = "^5.12.0"
 pre-commit = "^3.3.3"
 
 [tool.poetry.group.doc.dependencies]
+markdown-include = "^0.8.1"
 mkdocs = "^1.4.3"
+mkdocs-ansible = "^0.1.6"
 mkdocstrings = "^0.22.0"
 mkdocstrings-python = "^1.1.2"
-mkdocs-ansible = "^0.1.6"
-markdown-include = "^0.8.1"
 
 [build-system]
-requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
+requires = ["poetry-core"]
 
 [tool.isort]
 profile = "black"
 
 [tool.black]
-line-length = 90
 exclude = '''
 /(
     \.git
@@ -69,3 +72,4 @@ exclude = '''
   | docs
 )/
 '''
+line-length = 90
