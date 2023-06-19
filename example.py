@@ -1,9 +1,3 @@
-"""
- Copyright (c) 2023 Anthony Mugendi
- 
- This software is released under the MIT License.
- https://opensource.org/licenses/MIT
-"""
 import asyncio
 import time
 
@@ -20,8 +14,7 @@ t.stop()
 # get duration taken to run
 print("took", t.time_string)
 
-
-timeit = TimeIt(verbose=True, show_args=True)
+timeit = TimeIt()
 
 
 @timeit.byline
@@ -58,6 +51,10 @@ async def test_func_async(v=10):
 
     return x
 
+
+test_by_line()
+print()
+asyncio.run(test_by_line_async())
 
 print("response:", test_by_line())
 print("response:", asyncio.run(test_by_line_async()))
