@@ -16,9 +16,9 @@ classifiers = [
 keywords = ["function", "time", "duration", "trace", "timer", "timeit"]
 license = "MIT"
 maintainers = []
-#homepage="https://mugendi.github.io/wraptimer/"
-#repository="https://github.com/mugendi/wraptimer"
-#ducumentation="https://mugendi.github.io/wraptimer/"
+homepage="https://mugendi.github.io/wraptimer/"
+repository="https://github.com/mugendi/wraptimer"
+ducumentation="https://mugendi.github.io/wraptimer/"
 
 [tool.poetry.dependencies]
 python = "^3.9"
