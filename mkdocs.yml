@@ -6,8 +6,8 @@
 site_name: wraptimer
 copyright: Copyright © 2023 Red Hat, Inc.
 
-# site_url: https://ansible-compat.readthedocs.io/
-# repo_url: https://github.com/ansible/ansible-compat
+site_url: https://mugendi.github.io/wraptimer/
+repo_url: https://github.com/mugendi/wraptimer
 
 edit_uri: blob/main/docs/
 docs_dir: docs

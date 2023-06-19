@@ -29,7 +29,7 @@ def test_by_line():
 # run
 test_by_line()
 ```
-![](docs/images/sync-screenshot.png)
+![](docs/images/sync-screenshot.png) ![](images/sync-screenshot.png)
 
 
 
@@ -53,7 +53,7 @@ async def test_by_line_async():
 # run
 asyncio.run(test_by_line_async()) 
 ```
-![](docs/images/async-screenshot.png)
+![](docs/images/async-screenshot.png) ![](images/async-screenshot.png)
 
 
 ## Don't need Line-by-line tracing?
@@ -71,7 +71,11 @@ async def test_by_line_async():
     return [a, b]
 ```
 
-![](docs/images/func-screenshot.png)
+![](docs/images/func-screenshot.png) ![](images/func-screenshot.png)
+
+
+## Read the documentation
+For more about wraptimer, [Read The Documentation](https://mugendi.github.io/wraptimer/)
 
 
 
