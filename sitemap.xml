@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://mugendi.github.io/wraptimer/</loc>
-         <lastmod>2023-06-19</lastmod>
+         <lastmod>2023-06-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://mugendi.github.io/wraptimer/timeit/</loc>
-         <lastmod>2023-06-19</lastmod>
+         <lastmod>2023-06-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://mugendi.github.io/wraptimer/timer/</loc>
-         <lastmod>2023-06-19</lastmod>
+         <lastmod>2023-06-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mugendi.github.io/wraptimer/includes/abbreviations/</loc>
+         <lastmod>2023-06-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
