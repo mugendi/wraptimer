@@ -7,9 +7,10 @@
 
 # wraptimer
 
+[![github-watchers](https://img.shields.io/github/watchers/mugendi/wraptimer?label=Watch&style=social&logo=github)](https://github.com/mugendi/wraptimer)
+[![github-stars](https://img.shields.io/github/stars/mugendi/wraptimer?style=social&logo=github)](https://github.com/mugendi/wraptimer)
+[![github-forks](https://img.shields.io/github/forks/mugendi/wraptimer?label=Fork&style=social&logo=github)](https://github.com/mugendi/wraptimer)
 
-
-- 📖 [Documentation](https://mugendi.github.io/wraptimer/)
 - 📖 [Documentation](https://mugendi.github.io/wraptimer/)
 
 
