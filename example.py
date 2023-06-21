@@ -56,8 +56,8 @@ test_by_line()
 print()
 asyncio.run(test_by_line_async())
 
-print("response:", test_by_line())
-print("response:", asyncio.run(test_by_line_async()))
+test_by_line()
+asyncio.run(test_by_line_async())
 
-print("response:", test_func(200))
-print("response:", asyncio.run(test_func_async(200)))
+test_func(200)
+asyncio.run(test_func_async(200))
