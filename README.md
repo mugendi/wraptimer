@@ -74,7 +74,6 @@ asyncio.run(test_by_line_async())
 
 
 ## Don't need Line-by-line tracing?
-
 Use `@timeit.func` if you do not want to print **line-by-line** durations.
 
 ```python
