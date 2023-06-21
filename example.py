@@ -1,10 +1,12 @@
 import asyncio
+import pprint
 import time
 
 from wraptimer import TimeIt, Timer
 
 # initialize
 t = Timer(timer_type="performance")
+
 # start timer
 t.start()
 # some long running code
@@ -61,3 +63,34 @@ asyncio.run(test_by_line_async())
 
 test_func(200)
 asyncio.run(test_func_async(200))
+
+
+# init
+timeit_non_verbose = TimeIt(verbose=False)
+
+
+# decorate
+@timeit_non_verbose.byline
+def test_non_verbose(v=1):
+    time.sleep(1.5)
+    x = v * 50
+    return x
+
+
+resp = test_non_verbose(22)
+pprint.pprint(resp)
+
+
+timeit_non_verbose = TimeIt(show_args=True)
+
+
+# decorate
+@timeit_non_verbose.byline
+def test_non_verbose(v=1):
+    time.sleep(1.5)
+    x = v * 50
+    return x
+
+
+resp = test_non_verbose(22)
+pprint.pprint(resp)
