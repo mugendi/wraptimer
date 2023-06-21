@@ -7,9 +7,23 @@
 
 # wraptimer
 
+
+
+- 📖 [Documentation](https://mugendi.github.io/wraptimer/)
 - 📖 [Documentation](https://mugendi.github.io/wraptimer/)
 
+
 An amazing alternative to Python's builtin `timeit` module that allows for high resolution timing of functions as well as in-depth line-by-line timing. It also exposes convenient classes to measure execution time for any arbitrary code.
+
+<!-- 
+To generate recording, run
+
+asciinema rec -c "python example.py" docs/images/recording.cast 
+
+ttygif --input docs/images/recording.cast --output docs/images/recording.gif --fps 60 --speed 1 --theme mac --title "Running >> python example.py
+
+ -->
+![](./docs/images/recording.gif) ![](./images/recording.gif)
 
 ### Sync function example
 ```python
@@ -33,7 +47,6 @@ def test_by_line():
 test_by_line()
 ```
 ![](docs/images/sync-screenshot.png) ![](images/sync-screenshot.png)
-
 
 
 ### Async function example
